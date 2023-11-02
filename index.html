@@ -1,154 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konchok</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "楷体";
+        }
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?cs=srgb&dl=pexels-lisa-1083822.jpg&fm=jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        ul{
+            float: right;
+            list-style-type: none;
+            margin: 15px;
+        }
+        ul li{
+            display: inline-block;
+        }
+    
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: .6s ease;
+            border-radius: 20px;
+        }
+    
+        ul li a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        ul li.active a{
+            background-color: #fff;
+            color: #000;
+        }
+        .title{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .title h1{
+            color: #fff;
+            font-size: 70px;
+            font-family: Century Gothic;
+        }
+    </style>
+</head>
 <body>
-
-
-<!--加载动画-->
-
-
-<div id="loading-box">
-
-
-<div class="loading-left-bg"></div>
-
-
-<div class="loading-right-bg"></div>
-
-
-<div class="spinner-box">
-
-
-<div class="loader">
-
-
-<div class="inner one"></div>
-
-
-<div class="inner two"></div>
-
-
-<div class="inner three"></div>
-
-
-</div>
-
-
-<div class="loading-word">
-
-
-<p class="loading-title">织音博客</p>
-
-
-<span id="loading-text">加载中</span>
-
-
-</div>
-
-
-</div>
-
-
-<section id="section" class="section">
-
-
-<!-- 背景图片 -->
-
-
-<div class="bg-all">
-
-
-<img id="bg" onerror="this.classList.add('error');"></img>
-
-
-<div class="cover"></div>
-
-
-<!--主体内容-->
-
-
-css：
-
-
-html,
-
-
-body {
-
-
-width: 100%;
-
-
-height: 100%;
-
-
-margin: 0;
-
-
-padding: 0;
-
-
-background-color: #333;
-
-
-}
-
-
-*,
-
-
-a,
-
-
-p {
-
-
-text-decoration: none;
-
-
-transition: 0.3s;
-
-
-color: #efefef;
-
-
-user-select: none;
-
-
-font-family: 'MiSans', sans-serif;
-
-
-a:hover {
-
-
-color: white;
-
-
-.cards {
-
-
-transition: 0.5s;
-
-
-.cards:hover {
-
-
-transform: scale(1.01);
-
-
-.cards:active {
-
-
-transform: scale(0.95);
-
-
-.noscript {
-
-
-z-index: 999999;
-
-
-font-size: 0.95rem;
-
-
-text-align: center;
-
-
-margin: 14px 0px;
+    <header>
+        <div class="main">
+            <ul>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="http://www.baidu.com" target="_blank">百度</a></li>
+                <li><a href="https://www.china.com" target="_blank">中华网</a></li>
+                <li><a href="https://blog.csdn.net" target="_blank"><span style="color: crimson;">C</span>SDN官网</a></li>
+                
+            </ul>
+        </div>
+        <div class="title">
+            <h1><span style="color: crimson;">My</span> Homepage</h1>
+        </div>
+    </header>
+</body>
+</html>
